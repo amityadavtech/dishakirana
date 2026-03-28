@@ -386,8 +386,10 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                
-                 <a href="https://wa.me/917079490430" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a> 
+
+                  <div className='mt-8'>
+                <a href="https://wa.me/917079490430" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a>
+                  </div>
               </div>
             </ScrollReveal>
           </div>
@@ -412,7 +414,7 @@ export default function Home() {
                     Shop now and pay later with our flexible credit facility. No hassle, no extra charges.
                   </p>
 
-                  <div className="space-y-4">
+                  <div className="space-y-4 mb-2">
                     {[
                       { icon: CreditCard, text: 'Credit Limit up to Rs. 15,000' },
                       { icon: CheckCircle, text: 'Instant Approval' },
