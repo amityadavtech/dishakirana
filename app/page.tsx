@@ -572,7 +572,7 @@ export default function Home() {
 
           <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/70">
             <p className="mb-2">Copyright 2024 Disha Kirana - Your Trusted Neighborhood Store</p>
-            <p>GST No. 3298749274 | All Rights Reserved</p>
+            <p>GST No. 09APUPM4488D1Z8 | All Rights Reserved</p>
           </div>
         </div>
       </section>
