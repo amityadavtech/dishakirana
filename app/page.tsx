@@ -4,6 +4,7 @@ import { Navbar } from '@/components/navbar';
 import { FeaturedProducts } from '@/components/featured-products';
 import { BusinessInfo } from '@/components/business-info';
 import { FloatingWhatsApp } from '@/components/floating-whatsapp';
+import { ScrollReveal } from '@/components/scroll-reveal';
 import { Truck, CreditCard, Star, CheckCircle, Phone, MapPin, MessageCircle, Sparkles, Timer, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 
@@ -171,91 +172,95 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
-            <div className="animate-slide-in-up">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm border border-emerald-100">
-                <Sparkles size={16} />
-                Disha Kirana - Freshness Delivered Daily
-              </div>
-
-              <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05]">
-                Your neighborhood kirana,
-                <span className="block bg-gradient-to-r from-emerald-600 via-green-600 to-lime-600 bg-clip-text text-transparent">
-                  upgraded to wow.
-                </span>
-              </h1>
-              <p className="mt-5 text-lg text-muted-foreground max-w-xl">
-                Handpicked produce, pantry favorites, and daily essentials - delivered fast, packed with care, and priced for everyday living.
-              </p>
-
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <a
-                  href="https://wa.me/919876543210"
-                  className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold shadow-lg hover:shadow-emerald-200/60 hover:scale-105 transition-smooth"
-                >
-                  Order on WhatsApp
-                </a>
-                <a
-                  href="tel:+919876543210"
-                  className="px-6 py-3 rounded-xl border border-emerald-200 bg-white text-foreground font-semibold hover:border-emerald-400 hover:shadow-md transition-smooth"
-                >
-                  Call for Delivery
-                </a>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  {/* <Timer size={16} className="text-emerald-600" />
-                  30-min delivery in your area */}
+            <ScrollReveal animation="slide-in-up">
+              <div>
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm border border-emerald-100">
+                  <Sparkles size={16} />
+                  Disha Kirana - Freshness Delivered Daily
                 </div>
-              </div>
 
-              <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {[
-                  { label: 'Daily Essentials', value: '1000+ items' },
-                  { label: 'Freshness Score', value: '98%' },
-                  // { label: 'Community Love', value: '5000+ homes' },
-                ].map((stat, index) => (
-                  <div key={stat.label} className="stagger-item rounded-2xl bg-white/80 border border-emerald-100 p-4 shadow-sm">
-                    <p className="text-sm text-muted-foreground">{stat.label}</p>
-                    <p className="text-lg font-semibold text-foreground">{stat.value}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+                <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05]">
+                  Your neighborhood kirana,
+                  <span className="block bg-gradient-to-r from-emerald-600 via-green-600 to-lime-600 bg-clip-text text-transparent">
+                    upgraded to wow.
+                  </span>
+                </h1>
+                <p className="mt-5 text-lg text-muted-foreground max-w-xl">
+                  Handpicked produce, pantry favorites, and daily essentials - delivered fast, packed with care, and priced for everyday living.
+                </p>
 
-            <div className="relative animate-fade-in-scale">
-              <div className="absolute -top-10 -right-6 h-40 w-40 rounded-full bg-emerald-200/40 blur-2xl" />
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="relative h-48 md:h-56 rounded-2xl overflow-hidden shadow-xl">
-                    <Image src="/images/hero-produce.jpg" alt="Fresh produce" fill className="object-cover" priority />
-                  </div>
-                  <div className="relative h-40 md:h-44 rounded-2xl overflow-hidden shadow-xl">
-                    <Image src="/images/category-dairy.jpg" alt="Daily dairy" fill className="object-cover" />
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://wa.me/917079490430"
+                    className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold shadow-lg hover:shadow-emerald-200/60 hover:scale-105 transition-smooth"
+                  >
+                    Order on WhatsApp
+                  </a>
+                  <a
+                    href="tel:+919876543210"
+                    className="px-6 py-3 rounded-xl border border-emerald-200 bg-white text-foreground font-semibold hover:border-emerald-400 hover:shadow-md transition-smooth"
+                  >
+                    Call for Delivery
+                  </a>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    {/* <Timer size={16} className="text-emerald-600" />
+                    30-min delivery in your area */}
                   </div>
                 </div>
-                <div className="space-y-4 mt-6">
-                  <div className="relative h-40 md:h-44 rounded-2xl overflow-hidden shadow-xl">
-                    <Image src="/images/category-spices.jpg" alt="Spices" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-52 md:h-60 rounded-2xl overflow-hidden shadow-xl">
-                    <Image src="/images/category-essentials.jpg" alt="Essentials" fill className="object-cover" />
-                  </div>
-                </div>
-              </div>
 
-              <div className="absolute -bottom-6 left-6 right-6 rounded-2xl bg-white/90 border border-emerald-100 p-4 shadow-lg backdrop-blur">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
-                      <ShieldCheck size={20} />
+                <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  {[
+                    { label: 'Daily Essentials', value: '1000+ items' },
+                    { label: 'Freshness Score', value: '98%' },
+                    // { label: 'Community Love', value: '5000+ homes' },
+                  ].map((stat, index) => (
+                    <div key={stat.label} className="stagger-item rounded-2xl bg-white/80 border border-emerald-100 p-4 shadow-sm">
+                      <p className="text-sm text-muted-foreground">{stat.label}</p>
+                      <p className="text-lg font-semibold text-foreground">{stat.value}</p>
                     </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Quality Promise</p>
-                      <p className="text-base font-semibold text-foreground mb-1">Fresh, clean, and verified daily</p>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="fade-in-scale" delay={150}>
+              <div className="relative">
+                <div className="absolute -top-10 -right-6 h-40 w-40 rounded-full bg-emerald-200/40 blur-2xl" />
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-4">
+                    <div className="relative h-48 md:h-56 rounded-2xl overflow-hidden shadow-xl">
+                      <Image src="/images/hero-produce.jpg" alt="Fresh produce" fill className="object-cover" priority />
+                    </div>
+                    <div className="relative h-40 md:h-44 rounded-2xl overflow-hidden shadow-xl">
+                      <Image src="/images/category-dairy.jpg" alt="Daily dairy" fill className="object-cover" />
                     </div>
                   </div>
-                  {/* <span className="text-sm font-semibold text-emerald-700">Since 2018</span> */}
+                  <div className="space-y-4 mt-6">
+                    <div className="relative h-40 md:h-44 rounded-2xl overflow-hidden shadow-xl">
+                      <Image src="/images/category-spices.jpg" alt="Spices" fill className="object-cover" />
+                    </div>
+                    <div className="relative h-52 md:h-60 rounded-2xl overflow-hidden shadow-xl">
+                      <Image src="/images/category-essentials.jpg" alt="Essentials" fill className="object-cover" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="absolute -bottom-6 left-6 right-6 rounded-2xl bg-white/90 border border-emerald-100 p-4 shadow-lg backdrop-blur">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+                        <ShieldCheck size={20} />
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">Quality Promise</p>
+                        <p className="text-base font-semibold text-foreground mb-1">Fresh, clean, and verified daily</p>
+                      </div>
+                    </div>
+                    {/* <span className="text-sm font-semibold text-emerald-700">Since 2018</span> */}
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
 
@@ -282,34 +287,38 @@ export default function Home() {
       {/* Category Showcase */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-emerald-600 font-semibold">Shop the Aisles</p>
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3">Signature categories curated for Disha Kirana</h2>
+          <ScrollReveal animation="slide-in-up">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+              <div>
+                <p className="text-sm uppercase tracking-[0.2em] text-emerald-600 font-semibold">Shop the Aisles</p>
+                <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3">Signature categories curated for Disha Kirana</h2>
+              </div>
+              <p className="text-muted-foreground max-w-lg">
+                From crisp vegetables to pantry staples, explore the shelves that keep your kitchen running.
+              </p>
             </div>
-            <p className="text-muted-foreground max-w-lg">
-              From crisp vegetables to pantry staples, explore the shelves that keep your kitchen running.
-            </p>
-          </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-6">
             {productCategories.slice(0, 6).map((category, index) => (
-              <div key={category.id} className={`stagger-item group relative overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm hover:shadow-2xl transition-smooth ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
-                <div className="absolute inset-0">
-                  <Image
-                    src={category.products[0].image}
-                    alt={category.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+              <ScrollReveal key={category.id} animation="fade-in-scale" delay={index * 90}>
+                <div className={`group relative overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm hover:shadow-2xl transition-smooth ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
+                  <div className="absolute inset-0">
+                    <Image
+                      src={category.products[0].image}
+                      alt={category.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+                  </div>
+                  <div className="relative z-10 p-6 flex flex-col justify-end h-full min-h-[220px]">
+                    <p className="text-xs uppercase tracking-[0.25em] text-emerald-200">{category.id}</p>
+                    <h3 className="text-2xl md:text-3xl font-semibold text-white mt-2">{category.title}</h3>
+                    <p className="text-white/80 mt-2">{category.products.length}+ bestsellers curated today</p>
+                  </div>
                 </div>
-                <div className="relative z-10 p-6 flex flex-col justify-end h-full min-h-[220px]">
-                  <p className="text-xs uppercase tracking-[0.25em] text-emerald-200">{category.id}</p>
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white mt-2">{category.title}</h3>
-                  <p className="text-white/80 mt-2">{category.products.length}+ bestsellers curated today</p>
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -318,17 +327,21 @@ export default function Home() {
       {/* Featured Products Auto-Scroll Section */}
       <section id="products" className="py-16 md:py-24 bg-gradient-to-br from-white via-emerald-50/40 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 animate-fade-in-scale">
-            <p className="text-sm uppercase tracking-[0.3em] text-emerald-600 font-semibold">Top Picks</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-display">
-              Today&apos;s bestsellers at Disha Kirana
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Auto-scrolling selection of our freshest groceries and pantry heroes.
-            </p>
-          </div>
+          <ScrollReveal animation="fade-in-scale">
+            <div className="text-center mb-12">
+              <p className="text-sm uppercase tracking-[0.3em] text-emerald-600 font-semibold">Top Picks</p>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-display">
+                Today&apos;s bestsellers at Disha Kirana
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Auto-scrolling selection of our freshest groceries and pantry heroes.
+              </p>
+            </div>
+          </ScrollReveal>
 
-          <FeaturedProducts products={featuredProducts} />
+          <ScrollReveal animation="slide-in-up" delay={120}>
+            <FeaturedProducts products={featuredProducts} />
+          </ScrollReveal>
         </div>
       </section>
 
@@ -336,45 +349,47 @@ export default function Home() {
       <section id="delivery" className="py-16 md:py-24 bg-gradient-to-r from-emerald-50 to-lime-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="animate-slide-in-left">
-              <div className="relative h-80 md:h-96 rounded-3xl overflow-hidden shadow-xl">
-                <Image
-                  src="/images/delivery-service.jpg"
-                  alt="Delivery Service"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
+            <ScrollReveal animation="slide-in-left">
+              <div>
+                <div className="relative h-80 md:h-96 rounded-3xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/delivery-service.jpg"
+                    alt="Delivery Service"
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="animate-fade-in-scale">
-              <p className="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Fast Delivery</p>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-display">
-                Fast & Reliable Delivery
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                We deliver your groceries within minutes to your doorstep. Our delivery partners are trained to handle every order with care.
-              </p>
+            <ScrollReveal animation="fade-in-scale" delay={150}>
+              <div>
+                <p className="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Fast Delivery</p>
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-display">
+                  Fast & Reliable Delivery
+                </h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  We deliver your groceries within minutes to your doorstep. Our delivery partners are trained to handle every order with care.
+                </p>
 
-              <div className="space-y-4">
-                {[
-                  'Quick Delivery ',
-                  'Trained & Professional Delivery Staff',
-                  'Safe Packaging & Handling',
-                ].map((benefit, index) => (
-                  <div key={index} className="flex items-center gap-3 stagger-item">
-                    <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                      <CheckCircle size={18} className="text-primary-foreground" />
+                <div className="space-y-4">
+                  {[
+                    'Quick Delivery ',
+                    'Trained & Professional Delivery Staff',
+                    'Safe Packaging & Handling',
+                  ].map((benefit, index) => (
+                    <div key={index} className="flex items-center gap-3 stagger-item">
+                      <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <CheckCircle size={18} className="text-primary-foreground" />
+                      </div>
+                      <span className="text-foreground font-medium">{benefit}</span>
                     </div>
-                    <span className="text-foreground font-medium">{benefit}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
+                
+                 <a href="https://wa.me/917079490430" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a> 
               </div>
-              
-              <button className="mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth">
-               <a href="https://wa.me/919876543210"></a> Schedule Delivery
-              </button>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -382,71 +397,75 @@ export default function Home() {
       {/* Credit Facility Section */}
       <section id="credit" className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="animate-fade-in-scale relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-600 to-lime-600 p-8 md:p-12 text-white">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+          <ScrollReveal animation="fade-in-scale">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-600 to-lime-600 p-8 md:p-12 text-white">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
 
-            <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-white/80 font-semibold">Shop Now, Pay Later</p>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-                  Credit Facility Available
-                </h2>
-                <p className="text-lg text-white/90 mb-8">
-                  Shop now and pay later with our flexible credit facility. No hassle, no extra charges.
-                </p>
+              <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.25em] text-white/80 font-semibold">Shop Now, Pay Later</p>
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
+                    Credit Facility Available
+                  </h2>
+                  <p className="text-lg text-white/90 mb-8">
+                    Shop now and pay later with our flexible credit facility. No hassle, no extra charges.
+                  </p>
 
-                <div className="space-y-4">
-                  {[
-                    { icon: CreditCard, text: 'Credit Limit up to Rs. 15,000' },
-                    { icon: CheckCircle, text: 'Instant Approval' },
-                    { icon: Truck, text: 'Flexible Payment Terms' },
-                    { icon: Star, text: 'Secure & Trustworthy' },
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-3 stagger-item">
-                      <div className="flex-shrink-0 w-6 h-6">
-                        <item.icon size={24} />
+                  <div className="space-y-4">
+                    {[
+                      { icon: CreditCard, text: 'Credit Limit up to Rs. 15,000' },
+                      { icon: CheckCircle, text: 'Instant Approval' },
+                      { icon: Truck, text: 'Flexible Payment Terms' },
+                      { icon: Star, text: 'Secure & Trustworthy' },
+                    ].map((item, index) => (
+                      <div key={index} className="flex items-center gap-3 stagger-item">
+                        <div className="flex-shrink-0 w-6 h-6">
+                          <item.icon size={24} />
+                        </div>
+                        <span className="font-medium">{item.text}</span>
                       </div>
-                      <span className="font-medium">{item.text}</span>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                  <button className='className="mt-8 px-8 py-3 bg-white text-emerald-700 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'><a
+                    href="https://wa.me/917079490430"
+                  >Apply for Credit</a></button>
+
+                  {/* <button className="mt-8 px-8 py-3 bg-white text-emerald-700 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth">
+                    Apply for Credit
+                  </button> */}
                 </div>
-                <button className='className="mt-8 px-8 py-3 bg-white text-emerald-700 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'><a
-                  href="https://wa.me/919876543210"
-                >Apply for Credit</a></button>
 
-                {/* <button className="mt-8 px-8 py-3 bg-white text-emerald-700 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth">
-                  Apply for Credit
-                </button> */}
-              </div>
-
-              <div className="relative h-80 md:h-96 hidden md:block">
-                <div className="absolute inset-0 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <CreditCard size={80} className="mb-4 mx-auto opacity-50" />
-                    <p className="text-white/70 text-sm">Maximum Credit</p>
-                    <p className="text-5xl font-bold">Rs. 15,000</p>
+                <div className="relative h-80 md:h-96 hidden md:block">
+                  <div className="absolute inset-0 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <CreditCard size={80} className="mb-4 mx-auto opacity-50" />
+                      <p className="text-white/70 text-sm">Maximum Credit</p>
+                      <p className="text-5xl font-bold">Rs. 15,000</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
       <section id="why-us" className="py-16 md:py-24 bg-gradient-to-b from-emerald-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 animate-fade-in-scale">
-            <p className="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Why Disha Kirana</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-display">
-              We&apos;re built for your everyday moments
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We&apos;re committed to providing the best shopping experience with quality products and excellent service.
-            </p>
-          </div>
+          <ScrollReveal animation="fade-in-scale">
+            <div className="text-center mb-12">
+              <p className="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Why Disha Kirana</p>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-display">
+                We&apos;re built for your everyday moments
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                We&apos;re committed to providing the best shopping experience with quality products and excellent service.
+              </p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -481,13 +500,15 @@ export default function Home() {
                 description: 'Our friendly team is always ready to help via call or WhatsApp.',
               },
             ].map((item, index) => (
-              <div key={index} className="stagger-item bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover-lift group">
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-lime-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <item.icon size={24} className="text-white" />
+              <ScrollReveal key={index} animation="slide-in-up" delay={index * 80}>
+                <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover-lift group">
+                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-lime-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <item.icon size={24} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -499,44 +520,52 @@ export default function Home() {
       {/* Contact Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-foreground to-foreground/90 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 animate-fade-in-scale">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-display">Get in Touch</h2>
-            <p className="text-lg text-white/80">
-              Have questions? We&apos;re here to help!
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="stagger-item bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
-              <Phone size={32} className="mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Call Us</h3>
-              <a
-                href="tel:+919876543210"
-                className="text-lg font-semibold hover:text-emerald-300 transition-colors"
-              >
-                +91 98765 43210
-              </a>
-            </div>
-
-            <div className="stagger-item bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
-              <MessageCircle size={32} className="mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
-              <a
-                href="https://wa.me/919876543210"
-                className="text-lg font-semibold hover:text-emerald-300 transition-colors"
-              >
-                Chat with Us
-              </a>
-            </div>
-
-            <div className="stagger-item bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
-              <MapPin size={32} className="mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Location</h3>
-              <p className="text-lg font-semibold">
-                Disha Kirana,<br />
-                Your Neighborhood
+          <ScrollReveal animation="fade-in-scale">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 font-display">Get in Touch</h2>
+              <p className="text-lg text-white/80">
+                Have questions? We&apos;re here to help!
               </p>
             </div>
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <ScrollReveal animation="slide-in-up">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
+                <Phone size={32} className="mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Call Us</h3>
+                <a
+                  href="tel:+919876543210"
+                  className="text-lg font-semibold hover:text-emerald-300 transition-colors"
+                >
+                  +91 7079490430
+                </a>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="slide-in-up" delay={100}>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
+                <MessageCircle size={32} className="mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
+                <a
+                  href="https://wa.me/917079490430"
+                  className="text-lg font-semibold hover:text-emerald-300 transition-colors"
+                >
+                  Chat with Us
+                </a>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="slide-in-up" delay={200}>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
+                <MapPin size={32} className="mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Location</h3>
+                <p className="text-lg font-semibold">
+                  Disha Kirana,<br />
+                  Your Neighborhood
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
 
           <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/70">

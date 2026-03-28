@@ -17,6 +17,17 @@ export function ScrollReveal({
   const hasAnimated = useRef(false);
 
   useEffect(() => {
+    const prefersReducedMotion =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      if (ref.current) {
+        ref.current.classList.remove('opacity-0');
+      }
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated.current) {
@@ -45,17 +56,11 @@ export function ScrollReveal({
     };
   }, [animation]);
 
-  const animationClass = {
-    'fade-in-scale': 'animate-fade-in-scale',
-    'slide-in-up': 'animate-slide-in-up',
-    'slide-in-left': 'animate-slide-in-left',
-  }[animation];
-
   return (
     <div
       ref={ref}
       style={{ animationDelay: `${delay}ms` }}
-      className={`opacity-0 ${animationClass}`}
+      className="opacity-0"
     >
       {children}
     </div>

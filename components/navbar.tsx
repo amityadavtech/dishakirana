@@ -87,7 +87,7 @@ export function Navbar() {
                 <span className="hidden lg:inline">Call Us</span>
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917079490430"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-xl font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-smooth ring-1 ring-primary/30"
@@ -146,7 +146,7 @@ export function Navbar() {
                     Call Us
                   </a>
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/917079490430"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full px-3 py-2.5 bg-primary text-primary-foreground rounded-xl font-semibold text-center hover:opacity-90 transition-opacity"
