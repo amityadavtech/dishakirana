@@ -174,9 +174,17 @@ export default function Home() {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
             <ScrollReveal animation="slide-in-up">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm border border-emerald-100">
-                  <Sparkles size={16} />
-                  Disha Kirana Home Delivery
+                <div className="inline-flex flex-col items-start gap-1 rounded-2xl bg-white/90 px-8 py-4 text-lg font-semibold text-emerald-700 shadow-lg border border-emerald-100">
+                  <div className="flex items-center gap-3">
+                    <Sparkles size={22} />
+                    <span className='sm:text-4xl font-bold'>Disha Kirana Home Delivery</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Sparkles size={22} />
+                    <span className="sm:text-4xl font-bold text-emerald-600">
+                      Disha Kirana Credit Card
+                    </span>
+                  </div>
                 </div>
 
                 <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05]">
@@ -387,9 +395,9 @@ export default function Home() {
                   ))}
                 </div>
 
-                  <div className='mt-8'>
-                <a href="https://wa.me/919569171126" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a>
-                  </div>
+                <div className='mt-8'>
+                  <a href="https://wa.me/919569171126" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a>
+                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -559,13 +567,22 @@ export default function Home() {
             </ScrollReveal>
 
             <ScrollReveal animation="slide-in-up" delay={200}>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
-                <MapPin size={32} className="mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Location</h3>
-                <p className="text-lg font-semibold">
-                  Disha Kirana,Ayodhya
-                  
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-md mx-auto text-center">
+
+                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-emerald-100 text-emerald-600">
+                  <MapPin size={26} />
+                </div>
+
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Location
+                </h3>
+
+                <p className="text-base font-medium text-white/90 leading-relaxed">
+                  Disha Kirana<br />
+                  Paharganj, Ghusiana<br />
+                  Ayodhya (Faizabad), Uttar Pradesh
                 </p>
+
               </div>
             </ScrollReveal>
           </div>

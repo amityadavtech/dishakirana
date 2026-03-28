@@ -28,11 +28,10 @@ export function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-          isScrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled
             ? 'bg-background/70 backdrop-blur-xl border-b border-border/60 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.35)]'
             : 'bg-gradient-to-b from-background/70 via-background/40 to-transparent'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -42,9 +41,16 @@ export function Navbar() {
                 <div className="w-10 h-10 bg-gradient-to-br from-primary to-emerald-600 rounded-xl flex items-center justify-center shadow-md ring-1 ring-primary/20">
                   <span className="text-white font-bold text-lg tracking-tight">DK</span>
                 </div>
-                <div className="hidden sm:block">
-                  <h1 className="text-xl font-bold text-foreground font-display">Disha Kirana</h1>
-                  <p className="text-xs text-muted-foreground">Home Delivery</p>
+                <div className="hidden sm:flex flex-col items-start">
+
+                  <h1 className="text-xl lg:text-2xl font-semibold text-foreground font-display ">
+                    Disha Kirana Home Delivery
+                  </h1>
+
+                  <h2 className="text-lg lg:text-xl font-medium text-emerald-600">
+                    Disha Kirana Credit Card
+                  </h2>
+
                 </div>
               </Link>
             </div>
