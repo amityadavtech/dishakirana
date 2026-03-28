@@ -44,7 +44,7 @@ export function Navbar() {
                 </div>
                 <div className="hidden sm:block">
                   <h1 className="text-xl font-bold text-foreground font-display">Disha Kirana</h1>
-                  <p className="text-xs text-muted-foreground">Fresh Daily</p>
+                  <p className="text-xs text-muted-foreground">Home Delivery</p>
                 </div>
               </Link>
             </div>
