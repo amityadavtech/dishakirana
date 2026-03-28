@@ -10,10 +10,10 @@ import Image from 'next/image';
 
 // Featured 10 products with auto-scroll
 const featuredProducts = [
-  { id: 1, name: 'Fresh Tomatoes', image: '/images/category-vegetables.jpg', category: 'Vegetables' },
-  { id: 2, name: 'Organic Onions', image: '/images/category-vegetables.jpg', category: 'Vegetables' },
-  { id: 3, name: 'Bananas Yellow', image: '/images/category-fruits.jpg', category: 'Fruits' },
-  { id: 4, name: 'Sweet Oranges', image: '/images/category-fruits.jpg', category: 'Fruits' },
+  { id: 1, name: 'Shampoo', image: '/images/category-essentials.jpg', category: 'Household' },
+  { id: 2, name: 'Soap', image: '/images/category-essentials.jpg', category: 'Household' },
+  { id: 3, name: 'Moong Dal', image: '/images/category-dal.jpg', category: 'Pulses' },
+  { id: 4, name: 'Snacks', image: '/images/category-snacks.jpg', category: 'Snacks' },
   { id: 5, name: 'Basmati Rice', image: '/images/category-rice.jpg', category: 'Grains' },
   { id: 6, name: 'Toor Dal', image: '/images/category-dal.jpg', category: 'Pulses' },
   { id: 7, name: 'Turmeric Powder', image: '/images/category-spices.jpg', category: 'Spices' },
@@ -24,30 +24,30 @@ const featuredProducts = [
 
 // Product categories with products
 const productCategories = [
-  {
-    title: 'Fresh Vegetables',
-    id: 'vegetables',
-    products: [
-      { id: 1, name: 'Fresh Tomatoes', image: '/images/category-vegetables.jpg', price: 'Rs. 40/kg' },
-      { id: 2, name: 'Organic Onions', image: '/images/category-vegetables.jpg', price: 'Rs. 30/kg' },
-      { id: 3, name: 'Green Carrots', image: '/images/category-vegetables.jpg', price: 'Rs. 50/kg' },
-      { id: 4, name: 'Potatoes Premium', image: '/images/category-vegetables.jpg', price: 'Rs. 25/kg' },
-      { id: 5, name: 'Bell Peppers Mix', image: '/images/category-vegetables.jpg', price: 'Rs. 60/kg' },
-      { id: 6, name: 'Broccoli Fresh', image: '/images/category-vegetables.jpg', price: 'Rs. 80/kg' },
-    ],
-  },
-  {
-    title: 'Fresh Fruits',
-    id: 'fruits',
-    products: [
-      { id: 7, name: 'Bananas Yellow', image: '/images/category-fruits.jpg', price: 'Rs. 35/kg' },
-      { id: 8, name: 'Sweet Oranges', image: '/images/category-fruits.jpg', price: 'Rs. 60/kg' },
-      { id: 9, name: 'Red Apples', image: '/images/category-fruits.jpg', price: 'Rs. 100/kg' },
-      { id: 10, name: 'Sweet Mangoes', image: '/images/category-fruits.jpg', price: 'Rs. 80/kg' },
-      { id: 11, name: 'Fresh Guavas', image: '/images/category-fruits.jpg', price: 'Rs. 50/kg' },
-      { id: 12, name: 'Papaya Ripe', image: '/images/category-fruits.jpg', price: 'Rs. 40/kg' },
-    ],
-  },
+  // {
+  //   title: 'Fresh Vegetables',
+  //   id: 'vegetables',
+  //   products: [
+  //     { id: 1, name: 'Fresh Tomatoes', image: '/images/category-vegetables.jpg', price: 'Rs. 40/kg' },
+  //     { id: 2, name: 'Organic Onions', image: '/images/category-vegetables.jpg', price: 'Rs. 30/kg' },
+  //     { id: 3, name: 'Green Carrots', image: '/images/category-vegetables.jpg', price: 'Rs. 50/kg' },
+  //     { id: 4, name: 'Potatoes Premium', image: '/images/category-vegetables.jpg', price: 'Rs. 25/kg' },
+  //     { id: 5, name: 'Bell Peppers Mix', image: '/images/category-vegetables.jpg', price: 'Rs. 60/kg' },
+  //     { id: 6, name: 'Broccoli Fresh', image: '/images/category-vegetables.jpg', price: 'Rs. 80/kg' },
+  //   ],
+  // },
+  // {
+  //   title: 'Fresh Fruits',
+  //   id: 'fruits',
+  //   products: [
+  //     { id: 7, name: 'Bananas Yellow', image: '/images/category-fruits.jpg', price: 'Rs. 35/kg' },
+  //     { id: 8, name: 'Sweet Oranges', image: '/images/category-fruits.jpg', price: 'Rs. 60/kg' },
+  //     { id: 9, name: 'Red Apples', image: '/images/category-fruits.jpg', price: 'Rs. 100/kg' },
+  //     { id: 10, name: 'Sweet Mangoes', image: '/images/category-fruits.jpg', price: 'Rs. 80/kg' },
+  //     { id: 11, name: 'Fresh Guavas', image: '/images/category-fruits.jpg', price: 'Rs. 50/kg' },
+  //     { id: 12, name: 'Papaya Ripe', image: '/images/category-fruits.jpg', price: 'Rs. 40/kg' },
+  //   ],
+  // },
   {
     title: 'Grains & Pulses',
     id: 'grains',
@@ -125,8 +125,8 @@ const productCategories = [
 export default function Home() {
   const heroTickerImages = [
     '/images/hero-produce.jpg',
-    '/images/category-vegetables.jpg',
-    '/images/category-fruits.jpg',
+    '/images/category-dal.jpg',
+    '/images/category-snacks.jpg',
     '/images/category-dairy.jpg',
     '/images/category-spices.jpg',
     '/images/category-essentials.jpg',
@@ -176,7 +176,7 @@ export default function Home() {
               <div>
                 <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm border border-emerald-100">
                   <Sparkles size={16} />
-                  Disha Kirana - Freshness Delivered Daily
+                  Disha Kirana Home Delivery
                 </div>
 
                 <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05]">
@@ -191,7 +191,7 @@ export default function Home() {
 
                 <div className="mt-8 flex flex-wrap items-center gap-3">
                   <a
-                    href="https://wa.me/917079490430"
+                    href="https://wa.me/919569171126"
                     className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold shadow-lg hover:shadow-emerald-200/60 hover:scale-105 transition-smooth"
                   >
                     Order on WhatsApp
@@ -294,7 +294,7 @@ export default function Home() {
                 <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3">Signature categories curated for Disha Kirana</h2>
               </div>
               <p className="text-muted-foreground max-w-lg">
-                From crisp vegetables to pantry staples, explore the shelves that keep your kitchen running.
+                From rice to pantry staples, explore the shelves that keep your kitchen running.
               </p>
             </div>
           </ScrollReveal>
@@ -388,7 +388,7 @@ export default function Home() {
                 </div>
 
                   <div className='mt-8'>
-                <a href="https://wa.me/917079490430" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a>
+                <a href="https://wa.me/919569171126" className='mt-8 px-8 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'>Schedule Delivery</a>
                   </div>
               </div>
             </ScrollReveal>
@@ -430,7 +430,7 @@ export default function Home() {
                     ))}
                   </div>
                   <button className='className="mt-8 px-8 py-3 bg-white text-emerald-700 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth'><a
-                    href="https://wa.me/917079490430"
+                    href="https://wa.me/919569171126"
                   >Apply for Credit</a></button>
 
                   {/* <button className="mt-8 px-8 py-3 bg-white text-emerald-700 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-smooth">
@@ -540,7 +540,7 @@ export default function Home() {
                   href="tel:+919876543210"
                   className="text-lg font-semibold hover:text-emerald-300 transition-colors"
                 >
-                  +91 7079490430
+                  +91 9569171126
                 </a>
               </div>
             </ScrollReveal>
@@ -550,7 +550,7 @@ export default function Home() {
                 <MessageCircle size={32} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
                 <a
-                  href="https://wa.me/917079490430"
+                  href="https://wa.me/919569171126"
                   className="text-lg font-semibold hover:text-emerald-300 transition-colors"
                 >
                   Chat with Us
@@ -563,8 +563,8 @@ export default function Home() {
                 <MapPin size={32} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">Location</h3>
                 <p className="text-lg font-semibold">
-                  Disha Kirana,<br />
-                  Your Neighborhood
+                  Disha Kirana,Ayodhya
+                  
                 </p>
               </div>
             </ScrollReveal>
