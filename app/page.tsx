@@ -231,7 +231,7 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal animation="fade-in-scale" delay={150}>
+            <ScrollReveal animation="fade-in-scale">
               <div className="relative">
                 <div className="absolute -top-10 -right-6 h-40 w-40 rounded-full bg-emerald-200/40 blur-2xl" />
                 <div className="grid grid-cols-2 gap-4">
@@ -309,7 +309,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {productCategories.slice(0, 6).map((category, index) => (
-              <ScrollReveal key={category.id} animation="fade-in-scale" delay={index * 90}>
+              <ScrollReveal key={category.id} animation="fade-in-scale" >
                 <div className={`group relative overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm hover:shadow-2xl transition-smooth ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
                   <div className="absolute inset-0">
                     <Image
@@ -347,7 +347,7 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal animation="slide-in-up" delay={120}>
+          <ScrollReveal animation="slide-in-up" >
             <FeaturedProducts products={featuredProducts} />
           </ScrollReveal>
         </div>
@@ -370,7 +370,7 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal animation="fade-in-scale" delay={150}>
+            <ScrollReveal animation="fade-in-scale" >
               <div>
                 <p className="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Fast Delivery</p>
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-display">
@@ -510,7 +510,7 @@ export default function Home() {
                 description: 'Our friendly team is always ready to help via call or WhatsApp.',
               },
             ].map((item, index) => (
-              <ScrollReveal key={index} animation="slide-in-up" delay={index * 80}>
+              <ScrollReveal key={index} animation="slide-in-up" >
                 <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover-lift group">
                   <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-lime-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <item.icon size={24} className="text-white" />
@@ -553,7 +553,7 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal animation="slide-in-up" delay={100}>
+            <ScrollReveal animation="slide-in-up" >
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-smooth hover-lift">
                 <MessageCircle size={32} className="mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
@@ -566,7 +566,7 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal animation="slide-in-up" delay={200}>
+            <ScrollReveal animation="slide-in-up" >
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-md mx-auto text-center">
 
                 <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-emerald-100 text-emerald-600">
