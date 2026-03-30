@@ -588,8 +588,11 @@ export default function Home() {
           </div>
 
           <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/70">
-            <p className="mb-2">Copyright 2024 Disha Kirana - Your Trusted Neighborhood Store</p>
+            <p className="mb-2">Copyright 2026 Disha Kirana - Your Trusted Neighborhood Store</p>
             <p>GST No. 09APUPM4488D1Z8 | All Rights Reserved</p>
+            <p>Design and Developed By
+              <a href="https://beingxbot.in" target='_blank' className='text-white'> BeingxBot</a>
+            </p>
           </div>
         </div>
       </section>
